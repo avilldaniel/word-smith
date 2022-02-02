@@ -66,10 +66,21 @@ const ApiContainter = () => {
   }
 
   return (
-    <div className="">
+    <div className="
+      pt-8 pl-12
+    ">
       <div>
-        <input type="text" name="test" id="test" placeholder='ex. hello' onChange={event => setWord(event.target.value)} />
-        <button type="submit" onClick={handleClick}>submit</button>
+        <input type="text" name="test" id="test" placeholder='ex. hello' onChange={event => setWord(event.target.value)}
+        className='
+          border-4 rounded pl-3 border-white
+        '/>
+        
+        <button type="submit" onClick={handleClick}
+        className='
+          bg-purple-800 text-white px-5 py-1 pr-7 rounded-tr-full
+          hover:bg-fuchsia-900
+        '>
+          submit</button>
       </div>
 
         <input type="radio" value='perfRhyme' name='type' onChange={() => setRadio('?rel_rhy=')} defaultChecked/> perfect rhyme
